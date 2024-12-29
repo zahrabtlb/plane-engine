@@ -1,5 +1,4 @@
 # plane-engine
-saino project
 
 Qt, C++
 
