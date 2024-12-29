@@ -65,7 +65,7 @@ font: 11pt &quot;MV Boli&quot;;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="portAddress">
         <property name="text">
          <string>COM1</string>
         </property>
@@ -82,7 +82,7 @@ font: 11pt &quot;MV Boli&quot;;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_2">
+       <widget class="QLineEdit" name="baudRate">
         <property name="text">
          <string>115200</string>
         </property>
@@ -99,7 +99,7 @@ font: 11pt &quot;MV Boli&quot;;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_3">
+       <widget class="QLineEdit" name="parity">
         <property name="text">
          <string>OddParity</string>
         </property>
@@ -116,7 +116,7 @@ font: 11pt &quot;MV Boli&quot;;</string>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_4">
+       <widget class="QLineEdit" name="stopBit">
         <property name="text">
          <string>OneStop</string>
         </property>
@@ -125,7 +125,7 @@ font: 11pt &quot;MV Boli&quot;;</string>
       <item>
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string> </string>
+         <string/>
         </property>
        </widget>
       </item>

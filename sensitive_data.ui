@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>470</width>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,70 +19,74 @@ color: rgb(255, 255, 255);
 font: 11pt &quot;MV Boli&quot;;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>40</y>
-      <width>161</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>oil pressure</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>40</y>
-      <width>71</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="change">
-    <property name="geometry">
-     <rect>
-      <x>582</x>
-      <y>497</y>
-      <width>181</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="layout1"/>
+      </item>
+      <item row="0" column="2">
+       <layout class="QVBoxLayout" name="layout3"/>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="layout2"/>
+      </item>
+      <item row="1" column="0">
+       <layout class="QVBoxLayout" name="layout4"/>
+      </item>
+      <item row="1" column="1">
+       <layout class="QVBoxLayout" name="layout5"/>
+      </item>
+      <item row="1" column="2">
+       <layout class="QVBoxLayout" name="layout6"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="close">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>full information &gt;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>497</y>
-      <width>93</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
+        </property>
+        <property name="text">
+         <string>close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stop">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>stop</string>
-    </property>
-   </widget>
+        </property>
+        <property name="text">
+         <string>stop</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="change">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>full information &gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>470</width>
      <height>29</height>
     </rect>
    </property>

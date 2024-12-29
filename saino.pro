@@ -18,7 +18,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     all_data.cpp \
+    datahandle.cpp \
     gauge.cpp \
+    lamp.cpp \
     main.cpp \
     mainwindow.cpp \
     sensitive_data.cpp \
@@ -26,7 +28,9 @@ SOURCES += \
 
 HEADERS += \
     all_data.h \
+    datahandle.h \
     gauge.h \
+    lamp.h \
     mainwindow.h \
     sensitive_data.h \
     serial_handle.h

@@ -3,6 +3,10 @@
 
 #include <QMainWindow>
 #include "gauge.h"
+#include "lamp.h"
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QMap>
 
 
 namespace Ui {
@@ -20,12 +24,43 @@ public:
 private slots:
     void on_change_clicked();
 
+    void on_stop_clicked();
+
+    void on_close_clicked();
+
+public slots:
+    void handleMessage(QMap<int, double>* message);
+    void stopSlot();
+
 signals:
     void change();
+    void stop();
+    void closed();
 
 private:
     Ui::sensitive_data *ui;
-    CircularGauge* g;
+    CircularGauge* gaugeOilPressure;
+    CircularGauge* gaugeOilTemp;
+    CircularGauge* gaugeFuel;
+    CircularGauge* gaugeTorque;
+    CircularGauge* gaugeMotorSpeed;
+    bool error;
+    bool errorcheck[15];
+    double oilPressure;
+    double oilTemperature;
+    double fuel;
+    double torque;
+    double motorSpeed;
+
+    int oilPressureID;
+    int oilTemperatureID;
+    int fuelID;
+    int torqueID;
+    int motorSpeedID;
+
+
+    Lamp* lamp;
+
 };
 
 #endif // SENSITIVE_DATA_H

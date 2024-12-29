@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>796</width>
+    <height>610</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,61 +19,235 @@ color: rgb(255, 255, 255);
 font: 11pt &quot;MV Boli&quot;;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="change">
-    <property name="geometry">
-     <rect>
-      <x>542</x>
-      <y>507</y>
-      <width>221</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,1,10,1">
+      <item>
+       <widget class="QListWidget" name="listLable">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(220, 0, 0);font: 12pt;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OIL PRESSURE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OIL TEMPERATURE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FUEL FLOW</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FUEL</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EGT</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TORQUE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>INDICATED POWER</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Frictional Power</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Thermal efficiency</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Air-Fuel ratio</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MOTOR SPEED</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OUTPUT AIR SPEED</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>VIBRATION</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BODY TEMP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AIR TEMP</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="list1">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(220, 0, 0);font: 12pt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listError">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(220, 0, 0);font: 12pt;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OIL PRESSURE ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OIL TEMPERATURE ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FUEL FLOW ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>FUEL ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EGT ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TORQUE ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>INDICATED POWER ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Frictional Power ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Thermal efficiency ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Air-Fuel ratio ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>MOTOR SPEED ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OUTPUT AIR SPEED ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>VIBRATION ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>BODY TEMP ERROR</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AIR TEMP ERROR</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="list2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(220, 0, 0);font: 12pt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="close">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stop">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>stop</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="change">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 255, 255);
 </string>
-    </property>
-    <property name="text">
-     <string>sensitive information &lt;</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>507</y>
-      <width>93</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>stop</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>180</y>
-      <width>151</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>this is a test</string>
-    </property>
-   </widget>
+        </property>
+        <property name="text">
+         <string>sensitive information &lt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>796</width>
      <height>29</height>
     </rect>
    </property>
